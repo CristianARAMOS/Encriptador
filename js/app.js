@@ -1,6 +1,5 @@
-alert("hello");
 const mensaje_entrada = document.querySelector("#texto-entrada");
-const mensaje_salida = document.querySelector("#texto-salida");
+const mensaje_salida = document.getElementById('texto-salida');
 const muneco = document.querySelector("#muneco");
 const infoDre = document.querySelector("#info_dre");
 const copiarBtn = document.querySelector("#btnCopiar");
@@ -15,7 +14,7 @@ const matriz_main = [
 
 
 function  bttEncriptar(){
-  const texto = encriptarTexto(mensaje_entrada.value);
+  const texto = encriptarTexto(mensaje_entrada.value.toLowerCase());
   muneco.style.display = "none";
   infoDre.style.display = "none";
   copiarBtn.style.display = "block";
@@ -56,3 +55,10 @@ function  bttEncriptar(){
   return mensajeEntrada;
 
 }
+function copiar(){
+  const texto = (mensaje_salida);
+  texto.select();
+  console.log(texto.value);
+  document.execCommand('copy');
+  alert("Texto copiado al portapapeles!")
+  }
