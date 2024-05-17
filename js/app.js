@@ -1,9 +1,10 @@
+alert("hello");
 const mensaje_entrada = document.querySelector("#texto-entrada");
 const mensaje_salida = document.querySelector("#texto-salida");
-const muneco = document.querySelector("#muneco")
-const infoDre = document.querySelector("#info_dre")
-const copiarBtn = document.querySelector("#btnCopiar")
-const dre= document.querySelector("#dre")
+const muneco = document.querySelector("#muneco");
+const infoDre = document.querySelector("#info_dre");
+const copiarBtn = document.querySelector("#btnCopiar");
+const dre= document.querySelector("#dre");
 const matriz_main = [
   ["e", "enter"],//i = 0
   ["i", "imes"],//i = 1
