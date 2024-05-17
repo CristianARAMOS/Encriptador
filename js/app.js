@@ -55,7 +55,3 @@ function  bttEncriptar(){
   return mensajeEntrada;
 
 }
-
-  copiar.addEventListener("click"
-
- }
