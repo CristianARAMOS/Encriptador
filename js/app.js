@@ -3,7 +3,7 @@ const mensaje_salida = document.querySelector("#texto-salida");
 const muneco = document.querySelector("#muneco")
 const infoDre = document.querySelector("#info_dre")
 const copiarBtn = document.querySelector("#btnCopiar")
-
+const dre= document.querySelector("#dre")
 const matriz_main = [
   ["e", "enter"],//i = 0
   ["i", "imes"],//i = 1
@@ -17,8 +17,10 @@ function  bttEncriptar(){
   const texto = encriptarTexto(mensaje_entrada.value);
   muneco.style.display = "none";
   infoDre.style.display = "none";
+  copiarBtn.style.display = "block";
+  dre.classList.add("ajuste");
   mensaje_salida.innerHTML = texto;
-  console.log(texto);
+  mensaje_salida.classList.add("ajuste");
 }
  function encriptarTexto(mensajeEntrada) {
   for(let i=0 ; i <matriz_main.length; i++){
@@ -53,3 +55,7 @@ function  bttEncriptar(){
   return mensajeEntrada;
 
 }
+
+  copiar.addEventListener("click"
+
+ }
