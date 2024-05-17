@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encritador Alura latam</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="C:\Users\tycwa\OneDrive\Documentos\AtomPreba\imagenes\Logo.png" class="logo" alt="">
+      </div>
+    </header>
+    <main>
+      <div class="main">
+         <div class="izq">
+           <textarea placeholder="Escriba el mensaje que desea encriptar o desencriptar"  class="text_entrada" id="texto-entrada"></textarea>
+           <div class="izq-footer">
+             <img src="imagenes\exclamacion.png" alt="">
+             <span class="info-izq">Solo letras minúsculas y sin acentos</span>
+                <div class="bot-izq">
+                  <button class="bot-encriptar" onclick="bttEncriptar()">Encriptar</button>
+                  <button class="bot-desencriptar" onclick=" bttnDesencriptar()">Desencriptar</button>
+                </div>
+              </div>
+            </div>
+            <div class="dre">
+              <img class="muñeco" src="imagenes\Muñeco.png" alt="" id="muneco">
+                <div class="">
+                  <p class="mensaje-final ajuste" id="texto-salida">Ningún mensaje fue encontrado</p>
+                  <p class="info-dre" id="info_dre">Ingese texto que desea encriptar o desencriptar</p>
+                </div>
+                <button class="bot-copiar oculto" id="btnCopiar">Copiar</button>
+            </div>
+          </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="js\app.js" charset="utf-8"></script>
+      </body>
+      </html>
